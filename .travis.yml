@@ -4,6 +4,6 @@ services:
 
 before_install:
   - docker build -t ealkhannaq/docker-react -f Dockerfile.dev 
-
+#testing the code
 script:
   - docker run ealkhannaq/docker-react npm run test -- --coverage
